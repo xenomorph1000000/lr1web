@@ -1,7 +1,6 @@
-# Базовый образ
 FROM php:8.3-apache
 
-# Установка зависимостей (например, PDO для MySQL уже встроен, но добавим если нужно другие)
+# Установка зависимостей 
 RUN apt-get update && apt-get install -y \
     libzip-dev \
     && docker-php-ext-install zip pdo_mysql

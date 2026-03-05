@@ -8,8 +8,6 @@ services:
       - ./src:/var/www/html
     depends_on:
       - db
-    networks:
-      - app-network
     environment:
       - MYSQL_HOST=db
       - MYSQL_USER=root
@@ -26,12 +24,10 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=secret
       - MYSQL_DATABASE=mydb
-    networks:
-      - app-network
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin:latest
-    container_name: phpmyadmin
+    build: ./test
+    
     ports:
       - "8081:80"  
     environment:
@@ -40,8 +36,6 @@ services:
       - PMA_PASSWORD=secret
     depends_on:
       - db
-    networks:
-      - app-network
 
 networks:
   app-network:
