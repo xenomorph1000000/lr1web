@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.4;
+}
+
+h1, h2 {
+  margin: 0 0 10px;
+}
+
+form {
+  margin: 10px 0;
+}
+
+label {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+input, select {
+  padding: 6px 8px;
+  margin-top: 4px;
+}
+
+button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+a {
+  margin-left: 8px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 6px 8px;
+}
+
+hr {
+  margin: 16px 0;
+}
+
