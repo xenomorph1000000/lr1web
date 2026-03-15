@@ -17,5 +17,4 @@ WORKDIR /var/www/html
 # Экспонируем порт
 EXPOSE 80
 
-# Команда запуска
 CMD ["apache2-foreground"]

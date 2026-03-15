@@ -30,6 +30,7 @@ services:
     
     ports:
       - "8081:80"  
+      
     environment:
       - PMA_HOST=db
       - PMA_USER=root
