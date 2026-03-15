@@ -1,17 +1,5 @@
-﻿# FitClub (PHP forms)
+﻿# Фитнес-клуб (PHP forms)
 
-Минимальная страница для ЛР2:
+Страница для ЛР2:
 - форма (POST) сохраняет данные в CSV
 - поиск (GET) фильтрует таблицу по CSV
-
-## Как открыть
-- `docker compose up -d --build`
-- `http://localhost:8080`
-
-## Параметры
-- Выбор раздела (GET): `?entity=trainers` (или `workouts`, `clients`)
-- Поиск (GET): `?entity=trainers&q=Иванов`
-- Скачать CSV (GET): `?entity=trainers&download=1`
-
-## CSV
-- Файлы создаются в `src/data/*.csv`
